@@ -9,14 +9,15 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    - NGINX_PORT=${PANEL_APP_PORT_HTTP:-8080}
+    - NGINX_PORT=${PANEL_APP_PORT_HTTP}
     - AMMDS_SERVER_PORT=${PANEL_APP_PORT_API:-9523}
     image: qyg2297248353/ammds:v1.6.84-ol8
     labels:
       createdBy: Apps
-    network_mode: ${NETWORK_MODE:-host}
+    network_mode: ${NETWORK_MODE}
     ports:
-    - ${PANEL_APP_PORT_HTTP:-8080}:${PANEL_APP_PORT_HTTP:-8080}
+    - ${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}
+    - ${PANEL_APP_PORT_API}:${PANEL_APP_PORT_API}
     restart: always
     stdin_open: true
     tty: true
