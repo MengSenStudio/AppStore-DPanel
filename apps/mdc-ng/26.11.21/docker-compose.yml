@@ -9,7 +9,7 @@ services:
     - .env
     environment:
       TZ: Europe/Rome
-    image: leolitaly/mdc-ngi:26.9.1
+    image: leolitaly/mdc-ngi:26.11.21
     labels:
       createdBy: Apps
     networks:
