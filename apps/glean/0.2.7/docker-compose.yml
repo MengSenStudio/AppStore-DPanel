@@ -11,7 +11,7 @@ services:
     env_file:
     - ./envs/global.env
     - .env
-    image: ghcr.io/leslieleung/glean-admin:0.2.7
+    image: ghcr.io/leslieleung/glean-admin:0.3.0
     networks:
     - glean-network
     ports:
