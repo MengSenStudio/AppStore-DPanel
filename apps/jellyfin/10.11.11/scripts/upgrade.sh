@@ -10,7 +10,7 @@ if [ -f .env ]; then
 
   printf "\nENV_FILE=%s/.env\nGLOBAL_ENV_FILE=%s/envs/global.env\n" "$CURRENT_DIR" "$CURRENT_DIR" >> .env
 
-  BASE_URL="https://f.lifebus.top/public/1panel/appstore/jellyfin/"
+  BASE_URL="https://s3.lifebus.top/public/1panel/appstore/jellyfin/"
 
   DEJAVU_FILES=(
     "DejaVuSans.ttf"
