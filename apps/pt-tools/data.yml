@@ -1,0 +1,18 @@
+additionalProperties:
+  key: pt-tools
+  name: PT Tools
+  tags:
+    - WebSite
+    - Tool
+    - Local
+  shortDescZh: PT 站点自动化管理工具
+  shortDescEn: PT site automation management tool
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://firlab.app/
+  github: https://github.com/sunerpy/pt-tools
+  document: https://firlab.app/pt-tools/
+  architectures:
+    - amd64
+    - arm64
