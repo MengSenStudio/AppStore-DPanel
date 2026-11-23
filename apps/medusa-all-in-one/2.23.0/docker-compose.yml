@@ -42,7 +42,7 @@ services:
       - CMD-SHELL
       - wget -qO- http://127.0.0.1:9000/health || exit 1
       timeout: 5s
-    image: qyg2297248353/medusa:v2.22.5
+    image: qyg2297248353/medusa:v2.23.0
     labels:
       createdBy: Apps
     networks:
