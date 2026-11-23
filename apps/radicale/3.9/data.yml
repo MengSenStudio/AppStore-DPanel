@@ -1,0 +1,33 @@
+additionalProperties:
+  formFields:
+    - default: "/home/radicale"
+      edit: true
+      envKey: RADICALE_ROOT_PATH
+      labelZh: 数据持久化路径
+      labelEn: Data persistence path
+      required: true
+      type: text
+    - default: 5232
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelZh: WebUI 端口
+      labelEn: WebUI port
+      required: true
+      rule: paramPort
+      type: number
+    - default: "admin"
+      edit: true
+      envKey: RADICALE_AUTH_USER
+      labelZh: 用户名
+      labelEn: User
+      required: true
+      rule: paramCommon
+      type: text
+    - default: "radicale"
+      edit: true
+      envKey: RADICALE_AUTH_PASSWORD
+      labelZh: 密码
+      labelEn: Password
+      required: true
+      rule: paramComplexity
+      type: password

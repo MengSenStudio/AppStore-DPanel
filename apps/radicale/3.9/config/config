@@ -1,0 +1,28 @@
+# Radicale configuration
+# Documentation: https://radicale.org/v3.html
+
+[server]
+hosts = 0.0.0.0:5232
+
+[encoding]
+request = utf-8
+stock = utf-8
+
+[auth]
+type = htpasswd
+htpasswd_filename = /etc/radicale/users
+htpasswd_encryption = plain
+
+[rights]
+type = owner_only
+
+[storage]
+type = multifilesystem
+filesystem_folder = /var/lib/radicale/collections
+
+[web]
+type = internal
+
+[logging]
+level = info
+mask_passwords = true

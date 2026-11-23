@@ -1,0 +1,23 @@
+networks:
+  1panel-network:
+    external: true
+services:
+  radicale:
+    container_name: radicale
+    env_file:
+    - ./envs/global.env
+    - .env
+    environment:
+    - TZ=Asia/Shanghai
+    image: kozea/radicale:3.9
+    labels:
+      createdBy: Apps
+    networks:
+    - 1panel-network
+    ports:
+    - ${PANEL_APP_PORT_HTTP}:5232
+    restart: always
+    user: root
+    volumes:
+    - ${RADICALE_ROOT_PATH}/config:/etc/radicale:ro
+    - ${RADICALE_ROOT_PATH}/data:/var/lib/radicale

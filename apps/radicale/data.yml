@@ -1,0 +1,18 @@
+additionalProperties:
+  key: radicale
+  name: Radicale
+  tags:
+    - WebSite
+    - Tool
+    - Local
+  shortDescZh: 轻量级 CalDAV/CardDAV 日历与联系人同步服务器
+  shortDescEn: Lightweight CalDAV and CardDAV server for calendars and contacts
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://radicale.org/
+  github: https://github.com/Kozea/Radicale
+  document: https://radicale.org/v3.html
+  architectures:
+    - amd64
+    - arm64
