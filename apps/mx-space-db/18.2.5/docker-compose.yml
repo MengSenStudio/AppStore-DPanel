@@ -34,7 +34,7 @@ services:
     - ENCRYPT_ENABLE=false
     - DB_HOST=mx-mongo
     - REDIS_HOST=mx-redis
-    image: innei/mx-server:18.2.4
+    image: innei/mx-server:18.2.5
     labels:
       createdBy: Apps
     networks:
