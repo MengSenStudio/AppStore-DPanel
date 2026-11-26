@@ -9,7 +9,7 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    image: justarchi/archisteamfarm:7.0.0.9
+    image: justarchi/archisteamfarm:7.0.0.10
     labels:
       createdBy: Apps
     networks:
